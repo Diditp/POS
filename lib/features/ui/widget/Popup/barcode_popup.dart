@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:your_pos/features/util/text_util.dart';
+import 'package:your_pos/features/utils/text_util.dart';
 
 class BarcodePopup {
   static void show(BuildContext context) {

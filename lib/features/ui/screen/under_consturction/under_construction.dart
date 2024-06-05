@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:your_pos/features/util/app_color.dart';
-import 'package:your_pos/features/util/text_util.dart';
+import 'package:your_pos/features/utils/app_color.dart';
+import 'package:your_pos/features/utils/text_util.dart';
 
 class UnderConstructionScreen extends StatelessWidget {
   const UnderConstructionScreen({super.key});

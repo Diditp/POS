@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:your_pos/features/ui/widget/Navigation/sidebar_widget.dart';
 import 'package:your_pos/features/ui/widget/Popup/barcode_popup.dart';
-import 'package:your_pos/features/util/app_color.dart';
-import 'package:your_pos/features/util/text_util.dart';
+import 'package:your_pos/features/utils/app_color.dart';
+import 'package:your_pos/features/utils/text_util.dart';
 import 'package:your_pos/features/ui/screen/home/responsive/home_landscape.dart';
 import 'package:your_pos/features/ui/screen/home/responsive/home_potrait.dart';
 

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:your_pos/features/ui/screen/home/home_screen.dart';
 import 'package:your_pos/features/ui/screen/setting/setting_screen.dart';
 import 'package:your_pos/features/ui/screen/under_consturction/under_construction.dart';
-import 'package:your_pos/features/util/text_util.dart';
+import 'package:your_pos/features/utils/text_util.dart';
 
 class SidebarWidget extends StatelessWidget {
   const SidebarWidget({super.key});
