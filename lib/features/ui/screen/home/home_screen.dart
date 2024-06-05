@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
         drawer: const SidebarWidget(),
         backgroundColor: AppColor.appBody,
         body: MediaQuery.of(context).orientation == Orientation.landscape
-            ? const HomeLanscapeScreen()
-            : const HomePortraitScreen());
+            ? HomeLanscapeScreen()
+            : HomePortraitScreen());
   }
 }

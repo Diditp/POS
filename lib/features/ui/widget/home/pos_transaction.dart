@@ -2,12 +2,14 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:your_pos/features/controllers/counter_controller.dart';
 import 'package:your_pos/features/utils/app_color.dart';
 import 'package:your_pos/features/utils/text_util.dart';
 
 class PosTransaction extends StatelessWidget {
-  const PosTransaction({super.key});
-
+  PosTransaction({super.key});
+  final Counter count = Get.find();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,7 +38,7 @@ class PosTransaction extends StatelessWidget {
             child: Material(
               color: AppColor.primaryColor,
               child: InkWell(
-                onTap: () {},
+                onTap: count.increment,
                 child: Container(
                   padding: const EdgeInsets.all(8.0),
                   decoration:

@@ -1,19 +1,16 @@
 // ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:your_pos/features/controllers/counter_controller.dart';
 import 'package:your_pos/features/ui/widget/home/pos_menu_widget.dart';
 import 'package:your_pos/features/ui/widget/home/pos_product_view_widget.dart';
 import 'package:your_pos/features/ui/widget/home/pos_transaction.dart';
 import 'package:your_pos/features/ui/widget/home/pos_transaction_action.dart';
 
-class HomePortraitScreen extends StatefulWidget {
-  const HomePortraitScreen({super.key});
-
-  @override
-  State<HomePortraitScreen> createState() => _HomePortraitScreenState();
-}
-
-class _HomePortraitScreenState extends State<HomePortraitScreen> {
+class HomePortraitScreen extends StatelessWidget {
+  HomePortraitScreen({super.key});
+  final Counter count = Get.find();
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -61,9 +58,10 @@ class _HomePortraitScreenState extends State<HomePortraitScreen> {
                               ),
                             ],
                           ),
-                          child: const Column(
+                          child: Column(
                             children: [
                               PosTransaction(),
+                              Obx(() => Text("Customer: ${count.counter}"))
                             ],
                           ),
                         ),

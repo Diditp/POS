@@ -1,19 +1,17 @@
 // ignore_for_file: camel_case_types, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:get/instance_manager.dart';
+import 'package:your_pos/features/controllers/counter_controller.dart';
 import 'package:your_pos/features/ui/widget/home/pos_menu_widget.dart';
 import 'package:your_pos/features/ui/widget/home/pos_product_view_widget.dart';
 import 'package:your_pos/features/ui/widget/home/pos_transaction.dart';
 import 'package:your_pos/features/ui/widget/home/pos_transaction_action.dart';
 
-class HomeLanscapeScreen extends StatefulWidget {
-  const HomeLanscapeScreen({super.key});
-
-  @override
-  State<HomeLanscapeScreen> createState() => _HomeLanscapeScreenState();
-}
-
-class _HomeLanscapeScreenState extends State<HomeLanscapeScreen> {
+class HomeLanscapeScreen extends StatelessWidget {
+  HomeLanscapeScreen({super.key});
+  final Counter count = Get.find();
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -57,9 +55,10 @@ class _HomeLanscapeScreenState extends State<HomeLanscapeScreen> {
                         ),
                       ],
                     ),
-                    child: const Column(
+                    child: Column(
                       children: [
                         PosTransaction(),
+                        Obx(() => Text("Customer: ${count.counter}"))
                       ],
                     ),
                   ),

@@ -2,8 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:your_pos/features/ui/screen/home/home_screen.dart';
-import 'package:your_pos/features/ui/screen/setting/setting_screen.dart';
 import 'package:your_pos/features/ui/screen/under_consturction/under_construction.dart';
 import 'package:your_pos/features/utils/text_util.dart';
 
@@ -68,8 +68,7 @@ class SidebarWidget extends StatelessWidget {
             ),
             title: TextUtil.heading4("Setting", Colors.black),
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => const SettingScreen()));
+              Get.toNamed('/testing');
             },
           ),
         ],
