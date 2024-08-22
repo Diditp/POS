@@ -45,5 +45,10 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Bluetooth permission is required to access Bluetooth devices.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Bluetooth permission is required to access Bluetooth devices.</string>
+
 </dict>
 </plist>

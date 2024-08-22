@@ -1,9 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:your_pos/features/controllers/counter_controller.dart';
 import 'package:your_pos/features/testing/printer/print.dart';
 
 void main() {
+  if (Platform.isAndroid) {
+    debugPrint("ANDROID");
+  }
   runApp(const MyApp());
 }
 
